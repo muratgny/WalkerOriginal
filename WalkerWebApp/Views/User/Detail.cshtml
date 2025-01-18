@@ -37,9 +37,8 @@
                             </div>
                             <p class="text-muted">Pace: @Model.Pace</p>
                             <p class="text-muted">Mileage: @Model.Mileage</p>
-                            <p>
-                                Bit of a go-getter me, creating lovely things that help others. You'll most often find me out back in the hammock, listening to tunes and bending pixels to my will.
-                            </p>
+                            <p class="text-muted">About Me: @Model.AboutMe</p>
+                            
                             <div>
                                 <button class="btn btn-outline-primary" data-toggle="button"><i class="icon-add-user"></i> Follow</button>
                                 <button class="btn btn-outline-primary">
@@ -75,7 +74,7 @@
                     <div class="col">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="races-tab" data-toggle="tab" href="#races" role="tab" aria-controls="races" aria-selected="true">Races</a>
+                                <a class="nav-link active" id="walks-tab" data-toggle="tab" href="#walks" role="tab" aria-controls="walks" aria-selected="true">Walks</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="groups-tab" data-toggle="tab" href="#clubs" role="tab" aria-controls="clubs" aria-selected="false">Clubs</a>
@@ -94,114 +93,11 @@
     </section>
     <section class="flush-with-above">
         <div class="tab-content">
-            <div class="tab-pane fade active show" id="races" role="tabpanel" aria-labelledby="races-tab">
+            <div class="tab-pane fade active show" id="walks" role="tabpanel" aria-labelledby="walks-tab">
                 <div class="container">
                     <ul class="row feature-list feature-list-sm">
 
-                        <li class="col-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <a href="#">
-                                    <img class="card-img-top" src="/img/graphic-product-bench.jpg" alt="Card image cap">
-                                </a>
-                                <div class="card-body">
-                                    <a href="#">
-                                        <h4 class="card-title">Bench</h4>
-                                        <p class="card-text text-body">Accounting for creative people</p>
-                                    </a>
-                                </div>
-                                <div class="card-footer card-footer-borderless d-flex justify-content-between">
-                                    <div class="text-small">
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item"><i class="icon-heart mr-1"></i> 373</li>
-                                            <li class="list-inline-item"><i class="icon-message mr-1"></i> 62</li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropup">
-                                        <button class="btn btn-sm btn-outline-primary dropdown-toggle dropdown-toggle-no-arrow" type="button" id="BenchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="icon-dots-three-horizontal"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="BenchButton">
-                                            <a class="dropdown-item" href="#">Save</a>
-                                            <a class="dropdown-item" href="#">Share</a>
-                                            <a class="dropdown-item" href="#">Comment</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Report</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!--end of col-->
-
-                        <li class="col-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <a href="#">
-                                    <img class="card-img-top" src="/img/graphic-product-kin.jpg" alt="Card image cap">
-                                </a>
-                                <div class="card-body">
-                                    <a href="#">
-                                        <h4 class="card-title">Kin</h4>
-                                        <p class="card-text text-body">The digital fashion assistant</p>
-                                    </a>
-                                </div>
-                                <div class="card-footer card-footer-borderless d-flex justify-content-between">
-                                    <div class="text-small">
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item"><i class="icon-heart mr-1"></i> 84</li>
-                                            <li class="list-inline-item"><i class="icon-message mr-1"></i> 21</li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropup">
-                                        <button class="btn btn-sm btn-outline-primary dropdown-toggle dropdown-toggle-no-arrow" type="button" id="KinButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="icon-dots-three-horizontal"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="KinButton">
-                                            <a class="dropdown-item" href="#">Save</a>
-                                            <a class="dropdown-item" href="#">Share</a>
-                                            <a class="dropdown-item" href="#">Comment</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Report</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!--end of col-->
-
-                        <li class="col-12 col-md-6 col-lg-4">
-                            <div class="card">
-                                <a href="#">
-                                    <img class="card-img-top" src="/img/graphic-product-paydar.jpg" alt="Card image cap">
-                                </a>
-                                <div class="card-body">
-                                    <a href="#">
-                                        <h4 class="card-title">Paydar</h4>
-                                        <p class="card-text text-body">Location based touch payments</p>
-                                    </a>
-                                </div>
-                                <div class="card-footer card-footer-borderless d-flex justify-content-between">
-                                    <div class="text-small">
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item"><i class="icon-heart mr-1"></i> 253</li>
-                                            <li class="list-inline-item"><i class="icon-message mr-1"></i> 19</li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropup">
-                                        <button class="btn btn-sm btn-outline-primary dropdown-toggle dropdown-toggle-no-arrow" type="button" id="PaydarButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="icon-dots-three-horizontal"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-sm" aria-labelledby="PaydarButton">
-                                            <a class="dropdown-item" href="#">Save</a>
-                                            <a class="dropdown-item" href="#">Share</a>
-                                            <a class="dropdown-item" href="#">Comment</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Report</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!--end of col-->
+                        
 
                         <li class="col-12 col-md-6 col-lg-4">
                             <div class="card">
@@ -454,170 +350,7 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-12 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="media">
-                                        <a href="#" class="mr-3">
-                                            <img alt="Daniel Cameron" src="/img/avatar-male-1.jpg" class="avatar">
-                                        </a>
-                                        <div class="media-body">
-                                            <div>
-                                                <a href="#" class="h5 m-0">
-                                                    <h5>Daniel Cameron</h5>
-                                                </a>
-                                                <small class="text-muted"><i class="icon-location"></i> San Francisco, USA</small>
-                                            </div>
-                                            <ul class="list-inline">
-
-                                                <li class="list-inline-item text-small">196 Followers</li>
-
-                                                <li class="list-inline-item text-small">186 Following</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer d-flex justify-content-between align-items-center">
-                                    <a class="text-small" href="#">cameronman</a>
-                                    <button class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow">
-                                        <i class="icon-add-user"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="media">
-                                        <a href="#" class="mr-3">
-                                            <img alt="Caitlyn Halsy" src="/img/avatar-female-1.jpg" class="avatar">
-                                        </a>
-                                        <div class="media-body">
-                                            <div>
-                                                <a href="#" class="h5 m-0">
-                                                    <h5>Caitlyn Halsy</h5>
-                                                </a>
-                                                <small class="text-muted"><i class="icon-location"></i> Melbourne, AU</small>
-                                            </div>
-                                            <ul class="list-inline">
-
-                                                <li class="list-inline-item text-small">199 Followers</li>
-
-                                                <li class="list-inline-item text-small">189 Following</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer d-flex justify-content-between align-items-center">
-                                    <a class="text-small" href="#">chalsy</a>
-                                    <button class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow">
-                                        <i class="icon-add-user"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="media">
-                                        <a href="#" class="mr-3">
-                                            <img alt="Toby Marsh" src="/img/avatar-male-2.jpg" class="avatar">
-                                        </a>
-                                        <div class="media-body">
-                                            <div>
-                                                <a href="#" class="h5 m-0">
-                                                    <h5>Toby Marsh</h5>
-                                                </a>
-                                                <small class="text-muted"><i class="icon-location"></i> Denver, USA</small>
-                                            </div>
-                                            <ul class="list-inline">
-
-                                                <li class="list-inline-item text-small">6 Followers</li>
-
-                                                <li class="list-inline-item text-small">-4 Following</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer d-flex justify-content-between align-items-center">
-                                    <a class="text-small" href="#">marshisonline</a>
-                                    <button class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow">
-                                        <i class="icon-add-user"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="media">
-                                        <a href="#" class="mr-3">
-                                            <img alt="Lucille Freebody" src="/img/avatar-female-2.jpg" class="avatar">
-                                        </a>
-                                        <div class="media-body">
-                                            <div>
-                                                <a href="#" class="h5 m-0">
-                                                    <h5>Lucille Freebody</h5>
-                                                </a>
-                                                <small class="text-muted"><i class="icon-location"></i> Bathwick, UK</small>
-                                            </div>
-                                            <ul class="list-inline">
-
-                                                <li class="list-inline-item text-small">8 Followers</li>
-
-                                                <li class="list-inline-item text-small">-2 Following</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer d-flex justify-content-between align-items-center">
-                                    <a class="text-small" href="#">lfreebody</a>
-                                    <button class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow">
-                                        <i class="icon-add-user"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="media">
-                                        <a href="#" class="mr-3">
-                                            <img alt="Brenton Harvey" src="/img/avatar-male-3.jpg" class="avatar">
-                                        </a>
-                                        <div class="media-body">
-                                            <div>
-                                                <a href="#" class="h5 m-0">
-                                                    <h5>Brenton Harvey</h5>
-                                                </a>
-                                                <small class="text-muted"><i class="icon-location"></i> Dublin, IR</small>
-                                            </div>
-                                            <ul class="list-inline">
-
-                                                <li class="list-inline-item text-small">10 Followers</li>
-
-                                                <li class="list-inline-item text-small">0 Following</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer d-flex justify-content-between align-items-center">
-                                    <a class="text-small" href="#">harveytravel</a>
-                                    <button class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow">
-                                        <i class="icon-add-user"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
+                        
 
                         <div class="col-12 col-md-6">
                             <div class="card">
@@ -858,51 +591,5 @@
 
         </div>
     </section>
-    <!--end of section-->
-    <footer class="footer-short">
-        <div class="container">
-            <hr>
-            <nav class="row justify-content-between align-items-center">
-                <div class="col-auto">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <img alt="Image" src="/img/logo-gray.svg">
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Overview</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Documentation</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">Changelog</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--end of col-->
-                <div class="col-auto text-sm-right">
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="#"><i class="socicon-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#"><i class="socicon-facebook"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <!--end of col-->
-            </nav>
-            <!--end of row-->
-            <div class="row">
-                <div class="col">
-                    <small>© 2019 Medium Rare All Rights Reserved</small>
-                </div>
-                <!--end of col-->
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </footer>
+    
 </div>

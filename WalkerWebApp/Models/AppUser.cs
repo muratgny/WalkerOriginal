@@ -16,5 +16,6 @@ namespace WalkerWebApp.Models
         public Address? Address { get; set; }
         public ICollection<Club> Clubs { get; set; }
         public ICollection<Walk> Walks { get; set; }
+        public string? AboutMe { get; set; }
     }
 }

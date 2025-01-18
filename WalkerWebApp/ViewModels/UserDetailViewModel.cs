@@ -19,4 +19,6 @@ public class UserDetailViewModel
         (null, string state) => state,
         (null, null) => "",
     };
+
+    public string? AboutMe { get; set; }
 }

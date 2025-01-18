@@ -60,6 +60,7 @@ namespace WalkerWebApp.Controllers
                 Mileage = user.Mileage,
                 UserName = user.UserName,
                 ProfileImageUrl = user.ProfileImageUrl ?? "/img/avatar-male-4.jpg",
+                AboutMe = user.AboutMe
             };
             return View(userDetailViewModel);
         }
@@ -82,6 +83,7 @@ namespace WalkerWebApp.Controllers
                 Pace = user.Pace,
                 Mileage = user.Mileage,
                 ProfileImageUrl = user.ProfileImageUrl,
+                AboutMe = user.AboutMe
             };
             return View(editMV);
         }
@@ -130,6 +132,7 @@ namespace WalkerWebApp.Controllers
             user.State = editVM.State;
             user.Pace = editVM.Pace;
             user.Mileage = editVM.Mileage;
+            user.AboutMe = editVM.AboutMe;
 
             await _userManager.UpdateAsync(user);
 
