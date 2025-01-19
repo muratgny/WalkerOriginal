@@ -1,24 +1,40 @@
-# RunGroops
+# Walker  
 
-Rungroops is an online platform for runners. This platform will help you to find clubs, schedule events, and meet other runners in your area. 
+**Walker** is an innovative online platform designed for walking enthusiasts. Whether you’re a casual stroller or an avid walker, this platform connects you with like-minded individuals, clubs, and events in your area. Plan your walking adventures, discover nearby clubs, and make new friends along the way.  
 
-<kbd>![image](https://user-images.githubusercontent.com/65626254/173340999-a994fe15-b182-4692-8708-e74321ea55ac.png)</kbd>
+<kbd>![walkerSs](https://github.com/user-attachments/assets/302e860d-332f-41c7-bb3e-32d1e855c135)</kbd>  
 
-
-## 🏃 Getting Started
-[Youtube video on how to get database setup](https://www.youtube.com/watch?v=af_tK9LUiX0)
-
-1. Go into directory where you plan on keeping project and run.
-
-```bash
-  git fork https://github.com/teddysmithdev/RunGroop.git
-```
-
-2. Create a local database. (If you are unsure how to do this, watch my Youtube video )
+---
 
 
-3. Add connection string to app settings.json. It will look something like this:
-```bash
-  Data Source=DESKTOP-EI2TOGP\\SQLEXPRESS;Initial Catalog=RunGroops;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
-```
-4. Register for a [Cloudinary Account](https://cloudinary.com/users/register/free) (%100 free) and add Cloudname, ApiKey, and Api secret to appsettings.json.
+## 🚀 Features  
+1. **Discover and Connect**  
+   - Explore local walking clubs and join communities that share your passion.  
+   - Meet other walkers and grow your network.  
+
+2. **Schedule and Participate**  
+   - Create or join walking events.  
+   - Keep track of schedules and never miss a walk again.  
+
+3. **User-Friendly Experience**  
+   - An intuitive interface designed to make navigation and planning easy for everyone.  
+
+---
+
+## 🏗️ App Architecture and Technical Details  
+
+1. **Full-Stack Web Application**  
+   - The project is developed as a **monolithic .NET MVC** (Model-View-Controller) application.  
+   - It uses **MS SQL Server** as its database with the power of **Entity Framework** for seamless data access and management.  
+
+2. **Secure Authentication**  
+   - Authentication is implemented with **Microsoft Identity Services**, ensuring a safe and secure login experience for users.  
+
+3. **Image Uploads with Cloudinary**  
+   - Effortlessly upload and manage images via **Cloudinary**.  
+   - [Sign up for a free Cloudinary account](https://cloudinary.com/users/register/free) to configure this feature.  
+
+
+
+
+
