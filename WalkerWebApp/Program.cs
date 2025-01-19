@@ -38,14 +38,19 @@ if (args.Length == 1 && args[0].ToLower() == "seeddata")
     //Seed.SeedData(app);
 }
 
+//// Get the port from the environment variable or use 8080 as the default.
+//var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+
+//// Configure Kestrel to listen on 0.0.0.0:<port>.
+//app.Urls.Add($"http://0.0.0.0:{port}");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

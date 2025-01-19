@@ -29,15 +29,15 @@ namespace WalkerWebApp.Tests.Repository
                     databaseContext.Clubs.Add(
                       new Club()
                       {
-                          Title = "Running Club 1",
-                          Image = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
-                          Description = "This is the description of the first cinema",
+                          Title = "Walking Club 1",
+                          Image = "https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                          Description = "This is the description of the first",
                           ClubCategory = ClubCategory.City,
                           Address = new Address()
                           {
                               Street = "123 Main St",
-                              City = "Charlotte",
-                              Country = "NC"
+                              City = "Brooklyn",
+                              Country = "USA"
                           }
                       });
                     await databaseContext.SaveChangesAsync();
@@ -52,15 +52,15 @@ namespace WalkerWebApp.Tests.Repository
             //Arrange
             var club = new Club()
             {
-                Title = "Running Club 1",
-                Image = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
-                Description = "This is the description of the first cinema",
+                Title = "Walking Club 1",
+                Image = "https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                Description = "This is the description of the first",
                 ClubCategory = ClubCategory.City,
                 Address = new Address()
                 {
                     Street = "123 Main St",
-                    City = "Charlotte",
-                    Country = "NC"
+                    City = "Brooklyn",
+                    Country = "USA"
                 }
             };
             var dbContext = await GetDbContext();
@@ -110,15 +110,15 @@ namespace WalkerWebApp.Tests.Repository
             //Arrange
             var club = new Club()
             {
-                Title = "Running Club 1",
-                Image = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
-                Description = "This is the description of the first cinema",
+                Title = "Walking Club 1",
+                Image = "https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                Description = "This is the description of the first",
                 ClubCategory = ClubCategory.City,
                 Address = new Address()
                 {
                     Street = "123 Main St",
-                    City = "Charlotte",
-                    Country = "NC"
+                    City = "Brooklyn",
+                    Country = "USA"
                 }
             };
             var dbContext = await GetDbContext();
@@ -140,15 +140,15 @@ namespace WalkerWebApp.Tests.Repository
             //Arrange
             var club = new Club()
             {
-                Title = "Running Club 1",
-                Image = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
-                Description = "This is the description of the first cinema",
+                Title = "Walking Club 1",
+                Image = "https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                Description = "This is the description of the first",
                 ClubCategory = ClubCategory.City,
                 Address = new Address()
                 {
                     Street = "123 Main St",
-                    City = "Charlotte",
-                    Country = "NC"
+                    City = "Brooklyn",
+                    Country = "USA"
                 }
             };
             var dbContext = await GetDbContext();
@@ -181,18 +181,18 @@ namespace WalkerWebApp.Tests.Repository
         public async void ClubRepository_GetClubsByState_ReturnsList()
         {
             //Arrange
-            var state = "NC";
+            var state = "USA";
             var club = new Club()
             {
-                Title = "Running Club 1",
-                Image = "https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/running.jpg?quality=82&strip=1&resize=640%2C360",
-                Description = "This is the description of the first cinema",
+                Title = "Walking Club 1",
+                Image = "https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                Description = "This is the description of the first",
                 ClubCategory = ClubCategory.City,
                 Address = new Address()
                 {
                     Street = "123 Main St",
-                    City = "Charlotte",
-                    Country = "NC"
+                    City = "Brooklyn",
+                    Country = "USA"
                 }
             };
             var dbContext = await GetDbContext();
@@ -205,7 +205,7 @@ namespace WalkerWebApp.Tests.Repository
             //Assert
             result.Should().NotBeNull();
             result.Should().BeOfType<List<Club>>();
-            result.First().Title.Should().Be("Running Club 1");
+            result.First().Title.Should().Be("Walking Club 1");
         }
     }
 }

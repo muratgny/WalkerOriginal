@@ -35,12 +35,12 @@ namespace WalkerWebApp.Tests.Controller
         [Fact]
         public void ClubController_Index_ReturnsSuccess()
         {
-            //Arrange - What do i need to bring in?
+            //Arrange 
             var clubs = A.Fake<IEnumerable<Club>>();
             A.CallTo(() => _clubRepository.GetAll()).Returns(clubs);
             //Act
             var result = _clubController.Index();
-            //Assert - Object check actions
+            //Assert 
             result.Should().BeOfType<Task<IActionResult>>();
         }
 
@@ -52,7 +52,7 @@ namespace WalkerWebApp.Tests.Controller
             var club = A.Fake<Club>();
             A.CallTo(() => _clubRepository.GetByIdAsync(id)).Returns(club);
             //Act
-            var result = _clubController.DetailClub(id, "RunningClub");
+            var result = _clubController.DetailClub(id, "WalkingClub");
             //Assert
             result.Should().BeOfType<Task<IActionResult>>();
         }

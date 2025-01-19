@@ -11,7 +11,7 @@
             <div class="col-12 col-md-6 col-lg-5 section-intro">
                 <h1 class="display-3">Find a walker group</h1>
                 <span class="lead">
-                    A community of devoted walkers, passionate about running and life. Ready to find your accountability partner?
+                    A community of devoted walkers, passionate about walking and life. Ready to find your accountability partner?
                 </span>
             </div>
             <!--end of col-->
@@ -46,7 +46,7 @@
                                     </label>
                                 </div>
                             </div> *@
-                            <button type="submit" class="btn btn-lg btn-success btn-block">Sign up for RunGroop</button>
+                            <button type="submit" class="btn btn-lg btn-success btn-block">Sign up for Walker</button>
                         </form>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
         @if (Model.Clubs == null)
         {
             <h1 class="fw-light">
-                There are no running clubs in your area! <a asp-area="" asp-controller="Account"
+                There are no walking clubs in your area! <a asp-area="" asp-controller="Account"
                                                         asp-action="Login">Login</a> and create one!
             </h1>
         }
@@ -71,7 +71,7 @@
         {
             <div class="row justify-content-between mb-5">
                 <div class="col-auto">
-                    <h3>Running clubs near @Model.City, @Model.Country</h3>
+                    <h3>Walking clubs near @Model.City, @Model.Country</h3>
                 </div>
                 <!--end of col-->
             <div class="col-auto">
