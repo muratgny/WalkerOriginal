@@ -1,19 +1,39 @@
-# Walker
+# Walker  
 
-Walker is an online platform for people who likes walking. This platform will help you to find clubs, schedule events, and meet other walkers in your area. 
+**Walker** is an innovative online platform designed for walking enthusiasts. Whether you’re a casual stroller or an avid walker, this platform connects you with like-minded individuals, clubs, and events in your area. Plan your walking adventures, discover nearby clubs, and make new friends along the way.  
 
-<kbd>![walkerSs](https://github.com/user-attachments/assets/0e0bcb70-d1a3-4e38-9f92-21654e87db50)</kbd>
+<kbd>![walkerSs](https://github.com/user-attachments/assets/0e0bcb70-d1a3-4e38-9f92-21654e87db50)</kbd>  
+
+---
+
+## 🚀 Features  
+1. **Discover and Connect**  
+   - Explore local walking clubs and join communities that share your passion.  
+   - Meet other walkers and grow your network.  
+
+2. **Schedule and Participate**  
+   - Create or join walking events.  
+   - Keep track of schedules and never miss a walk again.  
+
+3. **User-Friendly Experience**  
+   - An intuitive interface designed to make navigation and planning easy for everyone.  
+
+---
+
+## 🏗️ App Architecture and Technical Details  
+
+1. **Full-Stack Web Application**  
+   - The project is developed as a **monolithic .NET MVC** (Model-View-Controller) application.  
+   - It uses **MS SQL Server** as its database with the power of **Entity Framework** for seamless data access and management.  
+
+2. **Secure Authentication**  
+   - Authentication is implemented with **Microsoft Identity Services**, ensuring a safe and secure login experience for users.  
+
+3. **Image Uploads with Cloudinary**  
+   - Effortlessly upload and manage images via **Cloudinary**.  
+   - [Sign up for a free Cloudinary account](https://cloudinary.com/users/register/free) to configure this feature.  
 
 
-## 🏃 App Content and Technical Details
-
-1. Project is a monolith .Net MVC(Model-View-Controller) app working with MS-SQL with the help of Entity Framework.
-   
-
-2. Authentication handled with Microsoft Identity Services.
-   
-3. For Image upload, Cloudinary is used. [Cloudinary Account](https://cloudinary.com/users/register/free)
-   
 
 
 
