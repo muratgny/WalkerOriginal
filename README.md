@@ -2,9 +2,10 @@
 
 **Walker** is an innovative online platform designed for walking enthusiasts. Whether you’re a casual stroller or an avid walker, this platform connects you with like-minded individuals, clubs, and events in your area. Plan your walking adventures, discover nearby clubs, and make new friends along the way.  
 
-<kbd>![walkerSs](https://github.com/user-attachments/assets/0e0bcb70-d1a3-4e38-9f92-21654e87db50)</kbd>  
+<kbd>![walkerSs](https://github.com/user-attachments/assets/302e860d-332f-41c7-bb3e-32d1e855c135)</kbd>  
 
 ---
+
 
 ## 🚀 Features  
 1. **Discover and Connect**  
