@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Mnbvcxz!099acv"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  webapp:
+    build:
+      context: .
+    container_name: walker-web-app
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=walker;User Id=sa;Password=Mnbvcxz!099acv;"
+      ASPNETCORE_ENVIRONMENT: "Production"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - sqlserver
+
+volumes:
+  sqlserver-data:

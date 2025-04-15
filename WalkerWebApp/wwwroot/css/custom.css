@@ -6,16 +6,10 @@
     color: #02B875;
 }
 
-#logo-green {
-    font-family: "Jua", sans-serif;
-    font-size: 2rem;
-}
-
 input[id="registerLocation"]::placeholder {
     font-family: Roboto, 'Font Awesome\ 5 Pro', sans-serif;
     font-weight: 600;
 }  
-
 
 #datalistOptions {
     border: 1px #ccc;

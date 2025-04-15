@@ -6,7 +6,12 @@ namespace WalkerWebApp
     {
         public static string GetUserId(this ClaimsPrincipal user)
         {
-            return user.FindFirst(ClaimTypes.NameIdentifier).Value;
+            var claim = user.FindFirst(ClaimTypes.NameIdentifier);
+            if (claim == null)
+            {
+                throw new InvalidOperationException("User ID claim not found");
+            }
+            return claim.Value;
         }
     }
 }

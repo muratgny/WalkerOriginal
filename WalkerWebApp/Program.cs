@@ -21,7 +21,7 @@ builder.Services.AddScoped<IPhotoService, PhotoService>();
 builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection33"));
 });
 builder.Services.AddIdentity<AppUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -39,10 +39,10 @@ if (args.Length == 1 && args[0].ToLower() == "seeddata")
 }
 
 //// Get the port from the environment variable or use 8080 as the default.
-//var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 
 //// Configure Kestrel to listen on 0.0.0.0:<port>.
-//app.Urls.Add($"http://0.0.0.0:{port}");
+app.Urls.Add($"http://0.0.0.0:{port}");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

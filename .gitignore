@@ -32,6 +32,9 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+# dont include appsettings file anymore
+appsettings.json
+
 WalkerWebApp.Scraper/
 
 # Visual Studio 2015/2017 cache/options directory
